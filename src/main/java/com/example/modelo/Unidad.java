@@ -2,10 +2,10 @@ package com.example.modelo;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import exceptions.UnidadException;
-import views.EdificioView;
-import views.UnidadView;
+import jakarta.persistence.*;
+import com.example.exceptions.UnidadException;
+import com.example.views.EdificioView;
+import com.example.views.UnidadView;
 
 @Entity
 @Table(name = "unidades")

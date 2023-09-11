@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-
-import views.EdificioView;
+import com.example.views.EdificioView;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name="edificios")

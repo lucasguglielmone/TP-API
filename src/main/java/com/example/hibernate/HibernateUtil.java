@@ -1,17 +1,21 @@
-import modelo.Edificio;
-import modelo.Persona;
-import modelo.Reclamo;
-import modelo.Unidad;
+package com.example.hibernate;
+
+import com.example.modelo.Edificio;
+import com.example.modelo.Persona;
+import com.example.modelo.Reclamo;
+import com.example.modelo.Unidad;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
 
 public class HibernateUtil
 {
-	private AnnotationConfiguration config;
+	private Configuration config;
     private static SessionFactory sessionFactory;
 
     private HibernateUtil() {
-        	 config = new AnnotationConfiguration();
+        	 config = new Configuration();
              config.addAnnotatedClass(Edificio.class);
-             config.addAnnotatedClass(Imagen.class);
+             /*config.addAnnotatedClass(Imagen.class);*/
              config.addAnnotatedClass(Persona.class);
              config.addAnnotatedClass(Reclamo.class);
              config.addAnnotatedClass(Unidad.class);

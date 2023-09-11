@@ -1,4 +1,5 @@
 package com.example.modelo;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "imagenes")

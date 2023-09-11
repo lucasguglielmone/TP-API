@@ -2,8 +2,8 @@ package com.example.modelo;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import views.Estado;
+import jakarta.persistence.*;
+import com.example.views.Estado;
 
 @Entity
 @Table(name = "reclamos")

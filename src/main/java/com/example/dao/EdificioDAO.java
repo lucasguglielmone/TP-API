@@ -1,10 +1,10 @@
-package dao;
+package com.example.dao;
 
 import java.util.ArrayList;
 import java.util.List;
 import org.hibernate.Session;
-import hibernate.HibernateUtil;
-import modelo.Edificio;
+import com.example.hibernate.HibernateUtil;
+import com.example.modelo.Edificio;
 
 public class EdificioDAO {
     private static EdificioDAO instancia;
@@ -27,12 +27,12 @@ public class EdificioDAO {
 			System.out.println(a.getMessage());
 		}
 		session.beginTransaction();
-		List<Edificio> edificios = (List<Edificio>) session.createQuery("from edificios").list();
+		resultado = session.createQuery("from Edificio", Edificio.class).list();
 		session.getTransaction().commit();
 		session.close();
 		return resultado;
     }
-
+/*
     public Edificio findById(int id) {
 		try {
 			session = HibernateUtil.getSessionFactory().openSession();
@@ -46,6 +46,7 @@ public class EdificioDAO {
 		session.close();
 		return resultado;
 	}
+*/
 
 }
 

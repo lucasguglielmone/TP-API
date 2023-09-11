@@ -1,6 +1,7 @@
 package com.example.modelo;
 
 import views.PersonaView;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "personas")
