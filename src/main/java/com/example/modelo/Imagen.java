@@ -1,4 +1,4 @@
-package modelo;
+package com.example.modelo;
 
 @Entity
 @Table(name = "imagenes")
